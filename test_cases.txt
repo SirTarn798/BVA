@@ -1,55 +1,156 @@
-Heading:
-a min: 1, max: 2
-b min: 3, max: 4
-Selected shape: Rectangle
-Selected method: WR
-Formula: a * b
-Tester name: Tarn
-Run start date and time: 2025-01-05T05:05:27.643Z 
-Body: 
-Test case 1: a=1, b=2, expected=2
-Test case 2: a=1, b=3, expected=3
-Test case 3: a=1, b=4, expected=4
-Test case 4: a=1, b=5, expected=5
-Test case 5: a=2, b=2, expected=4
-Test case 6: a=2, b=3, expected=6
-Test case 7: a=2, b=4, expected=8
-Test case 8: a=2, b=5, expected=10
-Test case 9: a=3, b=2, expected=6
-Test case 10: a=3, b=3, expected=9
-Test case 11: a=3, b=4, expected=12
-Test case 12: a=3, b=5, expected=15Footer:
-Number of test cases: 12
-Run end date and time: 2025-01-05T05:05:27.644Z
-Execution time: 2 ms
+
 
 ==================================================
 
 Heading:
-a min: 5, max: 10
-b min: 4, max: 16
+a min: 2, max: 4
+b min: 5, max: 7
 Selected shape: Triangle
 Selected method: B
 Formula: 1/2 * a * b
 Tester name: Tarn
-Run start date and time: 2025-01-05T05:05:44.979Z 
+Run start date and time: 2025-02-16T12:04:51.847Z 
 Body: 
-Test case 1: a=5, b=4, expected=10
-Test case 2: a=5, b=5, expected=12.5
-Test case 3: a=5, b=15, expected=37.5
-Test case 4: a=5, b=16, expected=40
-Test case 5: a=6, b=4, expected=12
-Test case 6: a=6, b=5, expected=15
-Test case 7: a=6, b=15, expected=45
-Test case 8: a=6, b=16, expected=48
-Test case 9: a=9, b=4, expected=18
-Test case 10: a=9, b=5, expected=22.5
-Test case 11: a=9, b=15, expected=67.5
-Test case 12: a=9, b=16, expected=72
-Test case 13: a=10, b=4, expected=20
-Test case 14: a=10, b=5, expected=25
-Test case 15: a=10, b=15, expected=75
-Test case 16: a=10, b=16, expected=80Footer:
+Test case 1: a=2, b=5, expected=5
+Test case 2: a=2, b=6, expected=6
+Test case 3: a=2, b=6, expected=6
+Test case 4: a=2, b=7, expected=7
+Test case 5: a=3, b=5, expected=7.5
+Test case 6: a=3, b=6, expected=9
+Test case 7: a=3, b=6, expected=9
+Test case 8: a=3, b=7, expected=10.5
+Test case 9: a=3, b=5, expected=7.5
+Test case 10: a=3, b=6, expected=9
+Test case 11: a=3, b=6, expected=9
+Test case 12: a=3, b=7, expected=10.5
+Test case 13: a=4, b=5, expected=10
+Test case 14: a=4, b=6, expected=12
+Test case 15: a=4, b=6, expected=12
+Test case 16: a=4, b=7, expected=14Footer:
 Number of test cases: 16
-Run end date and time: 2025-01-05T05:05:44.980Z
+Run end date and time: 2025-02-16T12:04:51.848Z
+Execution time: 1 ms
+
+==================================================
+
+Heading:
+a min: 2, max: 3
+b min: 4, max: 5
+Selected shape: Triangle
+Selected method: B
+Formula: 1/2 * a * b
+Tester name: Tarn
+Run start date and time: 2025-02-16T12:07:13.961Z 
+Body: 
+Test case 1: a=2, b=4, expected=4
+Test case 2: a=2, b=5, expected=5
+Test case 3: a=2, b=4, expected=4
+Test case 4: a=2, b=5, expected=5
+Test case 5: a=3, b=4, expected=6
+Test case 6: a=3, b=5, expected=7.5
+Test case 7: a=3, b=4, expected=6
+Test case 8: a=3, b=5, expected=7.5
+Test case 9: a=2, b=4, expected=4
+Test case 10: a=2, b=5, expected=5
+Test case 11: a=2, b=4, expected=4
+Test case 12: a=2, b=5, expected=5
+Test case 13: a=3, b=4, expected=6
+Test case 14: a=3, b=5, expected=7.5
+Test case 15: a=3, b=4, expected=6
+Test case 16: a=3, b=5, expected=7.5Footer:
+Number of test cases: 16
+Run end date and time: 2025-02-16T12:07:13.961Z
+Execution time: 0 ms
+
+==================================================
+
+Heading:
+a min: 2, max: 3
+b min: 4, max: 5
+Selected shape: Triangle
+Selected method: B
+Formula: 1/2 * a * b
+Tester name: Tarn
+Run start date and time: 2025-02-16T12:07:29.876Z 
+Body: 
+Test case 1: a=2, b=4, expected=4
+Test case 2: a=2, b=5, expected=5
+Test case 3: a=2, b=4, expected=4
+Test case 4: a=2, b=5, expected=5
+Test case 5: a=3, b=4, expected=6
+Test case 6: a=3, b=5, expected=7.5
+Test case 7: a=3, b=4, expected=6
+Test case 8: a=3, b=5, expected=7.5
+Test case 9: a=2, b=4, expected=4
+Test case 10: a=2, b=5, expected=5
+Test case 11: a=2, b=4, expected=4
+Test case 12: a=2, b=5, expected=5
+Test case 13: a=3, b=4, expected=6
+Test case 14: a=3, b=5, expected=7.5
+Test case 15: a=3, b=4, expected=6
+Test case 16: a=3, b=5, expected=7.5Footer:
+Number of test cases: 16
+Run end date and time: 2025-02-16T12:07:29.877Z
+Execution time: 1 ms
+
+==================================================
+
+Heading:
+a min: 2, max: 4
+b min: 5, max: 7
+Selected shape: Rectangle
+Selected method: WR
+Formula: a * b
+Tester name: Tarn
+Run start date and time: 2025-02-16T12:10:19.214Z 
+Body: 
+Test case 1: a=1, b=4, expected=4
+Test case 2: a=1, b=5, expected=5
+Test case 3: a=1, b=7, expected=7
+Test case 4: a=1, b=8, expected=8
+Test case 5: a=2, b=4, expected=8
+Test case 6: a=2, b=5, expected=10
+Test case 7: a=2, b=7, expected=14
+Test case 8: a=2, b=8, expected=16
+Test case 9: a=4, b=4, expected=16
+Test case 10: a=4, b=5, expected=20
+Test case 11: a=4, b=7, expected=28
+Test case 12: a=4, b=8, expected=32
+Test case 13: a=5, b=4, expected=20
+Test case 14: a=5, b=5, expected=25
+Test case 15: a=5, b=7, expected=35
+Test case 16: a=5, b=8, expected=40Footer:
+Number of test cases: 16
+Run end date and time: 2025-02-16T12:10:19.215Z
+Execution time: 1 ms
+
+==================================================
+
+Heading:
+a min: 2, max: 4
+b min: 5, max: 7
+Selected shape: Rectangle
+Selected method: WR
+Formula: a * b
+Tester name: Tarn
+Run start date and time: 2025-02-16T12:11:14.604Z 
+Body: 
+Test case 1: a=1, b=4, expected=4
+Test case 2: a=1, b=5, expected=5
+Test case 3: a=1, b=7, expected=7
+Test case 4: a=1, b=8, expected=8
+Test case 5: a=2, b=4, expected=8
+Test case 6: a=2, b=5, expected=10
+Test case 7: a=2, b=7, expected=14
+Test case 8: a=2, b=8, expected=16
+Test case 9: a=4, b=4, expected=16
+Test case 10: a=4, b=5, expected=20
+Test case 11: a=4, b=7, expected=28
+Test case 12: a=4, b=8, expected=32
+Test case 13: a=5, b=4, expected=20
+Test case 14: a=5, b=5, expected=25
+Test case 15: a=5, b=7, expected=35
+Test case 16: a=5, b=8, expected=40Footer:
+Number of test cases: 16
+Run end date and time: 2025-02-16T12:11:14.605Z
 Execution time: 1 ms

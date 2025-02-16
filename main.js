@@ -1,7 +1,10 @@
 import fs from "fs"
 import promptSync from "prompt-sync";
+import Graph from 'graphology';
+
 
 const prompt = promptSync();
+const cfg = [];
 
 function validateInput(promptText, min, max) {
     const input = parseInt(prompt(promptText), 10);
@@ -25,22 +28,39 @@ function main() {
     try {
         //Input and validation
         const aMin = validateInput("Enter minimum value for 'a': ", 1, 1000);
+        cfg[0] = [1];
         const aMax = validateInput("Enter maximum value for 'a': ", aMin, 1000);
+        cfg[1] = [2];
         const bMin = validateInput("Enter minimum value for 'b': ", 1, 1000);
+        cfg[2] = [3];
         const bMax = validateInput("Enter maximum value for 'b': ", bMin, 1000);
+        cfg[3] = [4];
+
+        //Tester name
+        const testerName = prompt("Enter tester name: ");
+        cfg[4] = [5];
 
         //Shape selection
         const shape = prompt("Choose shape (T = Triangle, R = Rectangle): ").toUpperCase();
         if (shape !== "T" && shape !== "R") {
             throw new Error("Invalid shape choice. Choose 'T' or 'R'.");
         }
-
-        //Tester name
-        const testerName = prompt("Enter tester name: ");
+        cfg[5] = [6, 7];
 
         //Formula calc
         const formula = shape === "T" ? "1/2 * a * b" : "a * b";
+        if (shape === "T") {
+            console.log("1/2 * a * b")
+        } else {
+            console.log("a * b")
+        }
+        cfg[6] = [8];
+        cfg[7] = [9];
+
         const calculate = (a, b) => (shape === "T" ? 0.5 * a * b : a * b);
+
+        cfg[8] = [10];
+        cfg[9] = [10];
 
         //Select Test
         const testCaseMethod = prompt(
@@ -49,6 +69,8 @@ function main() {
         if (!["B", "W", "R", "WR"].includes(testCaseMethod)) {
             throw new Error("Invalid test case method.");
         }
+
+        cfg[10] = [11, 12, 13];
 
         //Generate test cases
         const start = Date.now();
@@ -94,8 +116,8 @@ function main() {
 
         //Save to file
         const date = new Date();
-        const heading = 
-`Heading:
+        const heading =
+            `Heading:
 a min: ${aMin}, max: ${aMax}
 b min: ${bMin}, max: ${bMax}
 Selected shape: ${shape === "T" ? "Triangle" : "Rectangle"}
@@ -105,11 +127,11 @@ Tester name: ${testerName}
 Run start date and time: ${date.toISOString()} \n`;
 
         const body =
-`Body: 
+            `Body: 
 ${testCases.map((tc) => `Test case ${tc.testCaseNumber}: a=${tc.a}, b=${tc.b}, expected=${tc.expectedResult}`).join("\n")}`;
 
-        const footer = 
-`Footer:
+        const footer =
+            `Footer:
 Number of test cases: ${testCases.length}
 Run end date and time: ${new Date().toISOString()}
 Execution time: ${Date.now() - start} ms`;
@@ -118,6 +140,14 @@ Execution time: ${Date.now() - start} ms`;
         console.log("Test cases appended to 'test_cases.txt'");
     } catch (error) {
         onsole.error(`Error: ${error.message}`);
+    }
+
+    cfg[11] = [14];
+    cfg[12] = [14];
+    cfg[13] = [14];
+    
+    for(let i = 0; i < cfg.length; i++) {
+        console.log(`Node ${i} : ${cfg[i]}`)
     }
 }
 

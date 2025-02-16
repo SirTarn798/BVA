@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "graphology": "^0.26.0",
     "prompt-sync": "^4.2.0"
   }
 }
