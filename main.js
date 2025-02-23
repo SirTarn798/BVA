@@ -28,17 +28,12 @@ function main() {
     try {
         //Input and validation
         const aMin = validateInput("Enter minimum value for 'a': ", 1, 1000);
-        cfg[0] = [1];
         const aMax = validateInput("Enter maximum value for 'a': ", aMin, 1000);
-        cfg[1] = [2];
         const bMin = validateInput("Enter minimum value for 'b': ", 1, 1000);
-        cfg[2] = [3];
         const bMax = validateInput("Enter maximum value for 'b': ", bMin, 1000);
-        cfg[3] = [4];
 
         //Tester name
         const testerName = prompt("Enter tester name: ");
-        cfg[4] = [5];
 
         //Shape selection
         const shape = prompt("Choose shape (T = Triangle, R = Rectangle): ").toUpperCase();
@@ -54,14 +49,11 @@ function main() {
         } else {
             console.log("a * b")
         }
-        cfg[6] = [8];
-        cfg[7] = [9];
+
 
         const calculate = (a, b) => (shape === "T" ? 0.5 * a * b : a * b);
 
-        cfg[8] = [10];
-        cfg[9] = [10];
-
+        
         //Select Test
         const testCaseMethod = prompt(
             "Choose test case method (B = BVA, W = Worse case, R = Robustness, WR = Worse case robustness): "
@@ -70,7 +62,6 @@ function main() {
             throw new Error("Invalid test case method.");
         }
 
-        cfg[10] = [11, 12, 13];
 
         //Generate test cases
         const start = Date.now();
